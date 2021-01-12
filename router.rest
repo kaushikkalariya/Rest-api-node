@@ -1,0 +1,33 @@
+//GET ALL DATA
+GET http://localhost:3000/subscribers
+
+//GET ONE
+####
+GET http://localhost:3000/subscribers/5ffd7ab731792f0d4022ef73
+
+####
+//POST ADD Data 
+POST http://localhost:3000/subscribers
+Content-Type:application/json
+
+{
+
+    "name":"testabc",
+    "subscribedToChannel": "subscribedToChannel"
+}
+
+####
+//POST UPDATE Data
+PATCH http://localhost:3000/subscribers/5ffd7ab731792f0d4022ef73
+Content-Type:application/json
+
+{
+
+    "name":"xyz",
+    "subscribedToChannel": "xyz"
+}
+
+###
+//DELETE Subscribed
+DELETE  http://localhost:3000/subscribers/5ffd7ab731792f0d4022ef73
+Content-Type:application/json
